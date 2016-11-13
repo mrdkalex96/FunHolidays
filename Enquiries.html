@@ -1,0 +1,151 @@
+<!-- Using an appropriate text-editor you have been tasked with developing a website for 
+     a travel agent the name of which is up to you and to some extent its content.-->
+<!-- Information 
+     File: Enquiries.html
+     Author: Alessandro Cara 
+     Creation: September 28th, 2016
+     Last modified: October 12th, 2016 
+     Description: This is the online survey page where the user can upload his data in order to have displayed the best holiday deal -->
+	 
+<!-- <!DOCTYPE html> gives the browser information about the version of Html used, in this case is HTML5 -->
+<!DOCTYPE html>	 
+<html lang="en">
+     <head>
+     <meta charset="utf-8">
+	 <script type="text/javascript" src="javascript.js"></script>
+     <link rel="stylesheet" type="text/css" href="css.css">
+        <title>ENQUIRIES</title>
+     </head>
+
+     <body style="background-color : #555;">
+<!-- navigation menu -->	 
+           <div id="menu">
+            <ul>
+              <li><a href="Home.html"><span style=color:white>Home</span></a></li>
+              <li><a href="Aboutus.html"><span style=color:white>About Us</span></a></li>
+              <li><a href="Holidaypackages.html"><span style=color:white>Holiday Packages</span></a></li>
+              <li><a href="Links.html"><span style=color:white>External Links</span></a></li>
+			  
+            </ul>
+           </div>
+           <div id="os1">
+		   <h1 style="text-align:center"> ONLINE SURVEY </h1>
+           </div>
+<!-- with the use of different tags I have been able to create a survey. 
+     The tag <form> is the tag which allows to create a form for user input, 
+     the tag <select> allows to create a drop-down list. 
+     With the tag <input> you can create different kind of function such as text field,text area, checkbox, radio button, reset button and submit button 
+	 Once the user press the submit button all his input will be sent to a php page in order to return a result (as I have not created any php page the submit button will create a message error file not found) -->           
+           <div id="os2">
+		   <hr>
+           <img src="hotel5.jpg" alt="hotel 5 star">
+           <form name="onlineForm" action="thankyou.html" method="post" onsubmit="return validateForm()">
+              First name:<br>
+                 <input type="text" name="name" placeholder="Name">
+              <br>
+              Surname:<br>
+                 <input type="text" name="surname" placeholder="Surname">
+           
+              <br>
+              Contact Telephone No.:<br>
+                 <input type="text" name="number" placeholder="Telephone number">
+           
+              <br>
+              Contact Email Address:<br>
+                 <input type="text" name="email" placeholder="Contact Email address"> 
+           <br>
+		      Confirm Email Address:<br>
+			     <input type="text" name="confirm_email" placeholder="Confirm Email address">
+           <br> 
+              Number of Passengers:<br>
+                 <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+					<option value="9">9</option>
+				    <option value="10">10</option>
+				   	<option value="11">11</option>
+				    <option value="12">12</option>
+				    <option value="13">13</option>
+				    <option value="14">14</option>
+					<option value="15">15</option>
+                 </select>
+            
+           <br> 
+           <br>
+              Specifics: <br>
+                 <input type="checkbox" name="Swimming Pool" value="Pool">    
+                     Swimming Pool<br>
+                 <input type="checkbox" name="Football Court" value="Football">
+                     Football Court<br>
+                 <input type="checkbox" name="Tennis Court" value="tennis">
+                     Tennis Court<br>  
+                 <input type="checkbox" name="Basketball Court" value="Basket"> 
+                     Basketball Court<br>
+                 <input type="checkbox" name="Internet Access" value="Wi-fi">     
+                     Internet Access<br>
+                 <input type="checkbox" name="Gym" value="gym">
+                      Gym
+           
+           <br>
+           <br>       
+              Package Type:<br>
+                 <input type="radio" name="Package type" value="Flight Only" checked>
+                      Flight Only<br>
+                 <input type="radio" name="Package type" value="Flight and Hotel">     
+                      Flight and Hotel<br>
+                 <input type="radio" name="Package type" value="Flight and Hotel and Car rental">     
+                      Flight and Hotel + Car Rental
+           <br>
+           <br>        
+              Leaving From: <br>
+                 <input type="text" name="From" placeholder="Leaving from:"><br>
+              Arriving to:<br> 
+                 <input type="text" name="To" placeholder="Arriving to"><br>
+              Departure date:<br>
+                 <input type="text" name="Departure" placeholder="Departing on"><br>
+              Return date:<br>
+                 <input type="text" name="Return" placeholder="Returning on">
+          
+          <br>
+          <br>
+              Further Information:<br>
+                 <textarea name="further_information" rows="15" cols="40" placeholder="Enter further information here"></textarea>
+          
+          <br>
+              
+              <input type="reset"  value="Reset">
+              <input type="submit" value="Submit">
+          </form> 
+          </div>
+		  <div id="audio">
+		  <hr>
+		 <audio controls autoplay>
+		   <source src="music.mp3" type="audio/mp3">
+           <source src="music.ogg" type="audio/ogg">
+		 </audio>
+		 </div>
+         <div id="html5logo">
+		 <hr>
+            <a href="https://www.w3.org/html/logo/" target="blank">
+		        <img src="html5logo.png" alt="html icon" width="150" height="100">
+            </a>
+            <img class="logo" src="logo.png">
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                 alt="Valid CSS!">
+                </a>
+            </p>
+		 </div>
+
+     </body>
+
+
+</html>     

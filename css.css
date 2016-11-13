@@ -1,0 +1,372 @@
+/* Author : Alessandro Cara
+/* File name : css.css
+/* Last modified : 10/10/2016
+
+/* div menu bar settings*/
+
+#menu{
+    width: 970px;
+	height: 70px;
+    border:  0px ;
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* ul style for the pages menu */
+
+#menu ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow:hidden;
+    background-color: #ff751a;
+    border-radius: 8px;
+    font-weight: bold;
+	display:inline-block;
+	overflow:auto;
+	width:100%;
+}
+/* li style for the pages menu */
+
+#menu li{
+    list-style-type: none;
+    background-color: #ff751a;
+    border-radius: 8px;
+    font-weight: bold;
+	display:inline-block;
+	overflow:auto;
+}
+
+/* style for the link inside the menu */
+
+#menu li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 25px 45px;
+    text-decoration: none;
+
+}
+/* change color for link hover */
+
+#menu li a:hover{
+    background-color: black;
+}
+/* h style for all pages */
+
+h1{
+    color:red;
+}
+h2{
+    font-family:  FreeMono, Castellar, "Arial Narrow";
+}
+h3{
+    font-family: verdana, Castellar;
+}
+h4{
+    font-family: vani, "Comis Sans MS";
+}
+/* about us page style 
+   background image settings, width, border, pagging, margin.  
+ */
+ 
+#div2{
+    background-image: url("compass.jpg");
+	background-repeat : no-repeat;
+	background-size: 1000px 400px;
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+#div4{
+    background-color: lightgrey;
+    width: 920px;
+    border: 1px ;
+    padding: 25px;
+    margin: 0 auto;
+}
+#div5{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+}
+#div6{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+}
+#div6 img{
+    position:relative;
+	float:right;
+}
+#div7{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+/* body background image for all the pages */
+
+body{ 
+	width: 100%;
+	height: 500px;
+	margin: 0px auto;
+	background-color: #555;
+	background-image: url(europe.png), url(starback.jpg);
+	background-position: 120% 70px, 0px 0px;
+    background-attachment: fixed;
+	background-repeat: no-repeat,no-repeat;
+	animation: animate-background linear 40s infinite;
+}
+/* background animation */
+
+@keyframes animate-background {
+	from { background-position: 100% 70px, 0px 0px; } 
+	to { background-position: -20% 70px, 0px 0px; }
+}
+/* style for gif image */
+
+#imggif1{
+    width: 400px;
+    height: 250px;
+    
+}
+/* style for video */
+
+#video1{
+    width: 920px;
+    border: 1px;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightgrey;
+    
+}
+/* homepage style */
+
+#home1{
+    background-image: url("sky1.jpg");
+    background-repeat : no-repeat;
+    background-size: 1000px 400px;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#home2{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#home3{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+.button1{
+    font-size: 50px;
+	border-radius: 50%;
+}
+#img1{
+    
+    left: 750px;
+    top: 1090px;
+}
+#imgeurope{
+    background-color: lightgrey;
+    width: 970px;
+    margin:auto;
+
+}
+#imgeurope img{
+    width:100%;
+}
+/* audio style */
+
+#audio{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo{
+    position: relative;
+    float: right;
+}
+/* holiday package page style */ 
+
+#hp1{
+    background-image: url("beach1.jpg");
+    background-repeat : no-repeat;
+    background-size: 1000px 400px;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#hp2{
+    background-color: lightgrey;
+    width: 920px;
+    border: 1px ;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#hp3{
+    background-color: lightgrey;
+    width: 920px;
+    border: 1px ;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#hp4{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*  table style */
+th, td{
+    border: 1px solid black;
+    text-align: left;
+}
+table{
+     border-spacing: 5px;
+     border-collapse:collapse;
+     margin: auto;
+}
+tr:hover{
+    background-color:#f5f5f5
+}
+
+#table1{
+    width:0%;
+}
+/* external link page style */
+
+#el1{
+    background-image: url("linksimage.jpg");
+    background-repeat : no-repeat;
+    background-size: 1000px 133px;
+    width: 920px;
+	padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#el1-5{
+    background-color: white;
+    width: 890px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: left;
+}
+#el2{
+    background-color: white;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* online survey page style */
+
+#os1{
+    background-image: url("enquiriesimg.jpeg");
+    width: 920px;
+    height: 150px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+#os2{
+    background-color: white;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: left;
+}    
+#os2 img{
+    position: relative;
+	float: right;
+    width: 400px;
+    height: 300px;
+}
+/* hr style for all pages */
+
+hr {
+	background-color: #fff;
+	border-top: 2px dotted #8c8b8b;
+}
+/* html5 logo style */
+
+#html5logo{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* links style for all the pages*/
+a:link{
+    color:blue;
+}
+a:visited{
+    color:white;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:blue;
+}
+/* style for the online form */
+
+input[type=text]:focus{
+    background-color:lightgrey;
+	border: 3px solid #555;
+	width: 25%;
+}
+textarea{
+    border: 1px solid black;
+	resize: none;
+}
+/* style for thank you page ( online survey confirmation ) */
+
+#thx1{
+    background-color: white;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
