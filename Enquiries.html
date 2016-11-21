@@ -4,7 +4,7 @@
      File: Enquiries.html
      Author: Alessandro Cara 
      Creation: September 28th, 2016
-     Last modified: October 12th, 2016 
+     Last modified: October 15th, 2016 
      Description: This is the online survey page where the user can upload his data in order to have displayed the best holiday deal -->
 	 
 <!-- <!DOCTYPE html> gives the browser information about the version of Html used, in this case is HTML5 -->
@@ -37,26 +37,26 @@
      With the tag <input> you can create different kind of function such as text field,text area, checkbox, radio button, reset button and submit button 
 	 Once the user press the submit button all his input will be sent to a php page in order to return a result (as I have not created any php page the submit button will create a message error file not found) -->           
            <div id="os2">
-		   <hr>
+		   
            <img src="hotel5.jpg" alt="hotel 5 star">
            <form name="onlineForm" action="thankyou.html" method="post" onsubmit="return validateForm()">
               First name:<br>
-                 <input type="text" name="name" placeholder="Name">
+                 <input type="text" name="name" placeholder="Name"><p id="errName"></p>
               <br>
               Surname:<br>
-                 <input type="text" name="surname" placeholder="Surname">
+                 <input type="text" name="surname" placeholder="Surname"><p id="errSurn"></p>
            
               <br>
               Contact Telephone No.:<br>
-                 <input type="text" name="number" placeholder="Telephone number">
+                 <input type="text" name="number" placeholder="Telephone number"><p id="errNum"></p>
            
               <br>
               Contact Email Address:<br>
-                 <input type="text" name="email" placeholder="Contact Email address"> 
-           <br>
+                 <input type="text" name="email" placeholder="Contact Email address"><p id="errEmail"></p>
+              <br>
 		      Confirm Email Address:<br>
-			     <input type="text" name="confirm_email" placeholder="Confirm Email address">
-           <br> 
+			     <input type="text" name="confirm_email" placeholder="Confirm Email address"><p id="errConfEmail"></p>
+              <br> 
               Number of Passengers:<br>
                  <select>
                     <option value="1">1</option>
@@ -101,14 +101,15 @@
                       Flight and Hotel<br>
                  <input type="radio" name="Package type" value="Flight and Hotel and Car rental">     
                       Flight and Hotel + Car Rental
+           <img src="linksimage1.jpg" alt="picture">
            <br>
            <br>        
               Leaving From: <br>
-                 <input type="text" name="From" placeholder="Leaving from:"><br>
+                 <input type="text" name="From" placeholder="Leaving from:"><p id="errFrom"></p><br>
               Arriving to:<br> 
-                 <input type="text" name="To" placeholder="Arriving to"><br>
+                 <input type="text" name="To" placeholder="Arriving to"><p id="errTo"></p><br>
               Departure date:<br>
-                 <input type="text" name="Departure" placeholder="Departing on"><br>
+                 <input type="text" name="Departure" placeholder="Departing on"><p id="errDate"></p><br>
               Return date:<br>
                  <input type="text" name="Return" placeholder="Returning on">
           
@@ -119,8 +120,8 @@
           
           <br>
               
-              <input type="reset"  value="Reset">
-              <input type="submit" value="Submit">
+              <input type="reset"  value="Reset" id="reset">
+              <input type="submit" value="Submit" id="submit">
           </form> 
           </div>
 		  <div id="audio">
