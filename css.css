@@ -1,6 +1,6 @@
 /* Author : Alessandro Cara
 /* File name : css.css
-/* Last modified : 10/10/2016
+/* Last modified : 15/11/2016
 
 /* div menu bar settings*/
 
@@ -52,6 +52,25 @@
 #menu li a:hover{
     background-color: black;
 }
+/* body background image for all the pages */
+
+body{ 
+    width: 100%;
+    height: 500px;
+    margin: 0px auto;
+    background-color: #555;
+    background-image: url(europe.png), url(starback.jpg);
+    background-position: 120% 70px, 0px 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat,no-repeat;
+    animation: animate-background linear 40s infinite;
+}
+/* background animation */
+
+@keyframes animate-background {
+    from { background-position: 100% 70px, 0px 0px; } 
+    to { background-position: -20% 70px, 0px 0px; }
+}
 /* h style for all pages */
 
 h1{
@@ -66,6 +85,52 @@ h3{
 h4{
     font-family: vani, "Comis Sans MS";
 }
+/* audio style */
+
+#audio{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Funholidays logo style */
+
+.logo{
+    position: relative;
+    float: right;
+}
+/* html5 logo style */
+
+#html5logo{
+    background-color: lightgrey;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* links style for all the pages*/
+a:link{
+    color:blue;
+}
+a:visited{
+    color:white;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:blue;
+}
+/* hr style for all pages */
+
+hr {
+    background-color: #fff;
+    border-top: 2px dotted #8c8b8b;
+}
+
 /* about us page style 
    background image settings, width, border, pagging, margin.  
  */
@@ -115,25 +180,7 @@ h4{
     text-align: center;
     
 }
-/* body background image for all the pages */
-
-body{ 
-	width: 100%;
-	height: 500px;
-	margin: 0px auto;
-	background-color: #555;
-	background-image: url(europe.png), url(starback.jpg);
-	background-position: 120% 70px, 0px 0px;
-    background-attachment: fixed;
-	background-repeat: no-repeat,no-repeat;
-	animation: animate-background linear 40s infinite;
-}
-/* background animation */
-
-@keyframes animate-background {
-	from { background-position: 100% 70px, 0px 0px; } 
-	to { background-position: -20% 70px, 0px 0px; }
-}
+/* homepage style */
 /* style for gif image */
 
 #imggif1{
@@ -152,8 +199,7 @@ body{
     background-color: lightgrey;
     
 }
-/* homepage style */
-
+/* home page various div styles */
 #home1{
     background-image: url("sky1.jpg");
     background-repeat : no-repeat;
@@ -198,20 +244,7 @@ body{
 #imgeurope img{
     width:100%;
 }
-/* audio style */
 
-#audio{
-    background-color: lightgrey;
-    width: 920px;
-    border: 15px black;
-    padding: 25px;
-    margin: 0 auto;
-    text-align: center;
-}
-.logo{
-    position: relative;
-    float: right;
-}
 /* holiday package page style */ 
 
 #hp1{
@@ -270,7 +303,7 @@ tr:hover{
 #el1{
     background-image: url("linksimage.jpg");
     background-repeat : no-repeat;
-    background-size: 1000px 133px;
+    background-size: 1000px 400px;
     width: 920px;
 	padding: 25px;
     margin: 0 auto;
@@ -278,14 +311,14 @@ tr:hover{
 }
 #el1-5{
     background-color: white;
-    width: 890px;
+    width: 920px;
     border: 15px black;
     padding: 25px;
     margin: 0 auto;
     text-align: left;
 }
 #el2{
-    background-color: white;
+    background-color: lightgrey;
     width: 920px;
     border: 15px black;
     padding: 25px;
@@ -296,15 +329,17 @@ tr:hover{
 
 #os1{
     background-image: url("enquiriesimg.jpeg");
+    background-size: 1000px 400px;
+    background-repeat: no-repeat;
     width: 920px;
-    height: 150px;
+    height: 100px;
     border: 15px black;
     padding: 25px;
     margin: 0 auto;
     text-align: center;
 }
 #os2{
-    background-color: white;
+    background-color: lightgrey;
     width: 920px;
     border: 15px black;
     padding: 25px;
@@ -316,35 +351,6 @@ tr:hover{
 	float: right;
     width: 400px;
     height: 300px;
-}
-/* hr style for all pages */
-
-hr {
-	background-color: #fff;
-	border-top: 2px dotted #8c8b8b;
-}
-/* html5 logo style */
-
-#html5logo{
-    background-color: lightgrey;
-    width: 920px;
-    border: 15px black;
-    padding: 25px;
-    margin: 0 auto;
-    text-align: center;
-}
-/* links style for all the pages*/
-a:link{
-    color:blue;
-}
-a:visited{
-    color:white;
-}
-a:hover{
-    color:red;
-}
-a:active{
-    color:blue;
 }
 /* style for the online form */
 
@@ -368,5 +374,92 @@ textarea{
     text-align: center;
 
 }
+#your_details{
+	background-color: white;
+    width: 920px;
+    border: 15px black;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*  style for javascript validation*/
 
+#errName{
+    position: absolute;
+    top:260px;
+    left:750px;
+    color: red;
+    font-size: 10px;
+}
+
+#errSurn{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+}
+
+#errNum{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+}
+
+#errEmail{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+
+}
+
+#errConfEmail{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+}
+
+#errFrom{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+}
+
+#errTo{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+}
+
+#errDate{
+    position: relative;
+    float: right;
+    color:red;
+    font-size: 10px;
+
+}
+
+#reset{
+    background-color: #68b12f;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+#submit{
+    background-color: #68b12f;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+
+
+}
 
