@@ -1,91 +1,185 @@
 <!-- Using an appropriate text-editor you have been tasked with developing a website for 
      a travel agent the name of which is up to you and to some extent its content.-->
 <!-- Information 
-     File: Home.html
+     File: Holidaypackages.html
      Author: Alessandro Cara 
      Creation: September 28th, 2016
-     Last modified: Novemver 13th, 2016 
-     Description: This is the home page of the website FUNHOLIDAYS -->
-	
+     Last modified: November 15th, 2016 
+     Description: This page shows all the packages available and the basic prices -->
+	 
 <!-- <!DOCTYPE html> gives the browser information about the version of Html used, in this case is HTML5 -->
 <!DOCTYPE html>	 
-<!-- language declaration -->	 
 <html lang="en">
-     <head>
-<!-- the following tag <meta> defines the character encoding for the HTML document -->     
-     <meta charset="utf-8">
-     <link rel="stylesheet" type="text/css" href="css.css">
-     <title>FUN HOLIDAYS</title>	
-     </head>
-
-<!-- the <body> tag contains the content of the webpage ; with the attribute style="background-color" is possible to change the background color of the page -->
-     <body style="background-color: #555;">  
-<!-- the <form> tag is used to create a form that collects user input, in this case I used also the button tag in order to create links with the other pages of the website -->  
-<!-- the <div> tag is used to define a part of the code, by giving an id it is easier to style every div in the css page -->
-         
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+         <title>Holiday Packages</title>
+    </head>
+    <body>
+<!-- navigation menu -->	
          <div id="menu">
-           <ul>
-            <li><a href="Aboutus.html"><span style=color:white>About Us</span></a></li>
-            <li><a href="Holidaypackages.html"><span style=color:white>Holiday Packages</span></a></li>
-            <li><a href="Links.html"><span style=color:white>External Links</span></a></li>
-            <li><a href="Enquiries.html"><span style=color:white>Enquiries</span></a></li>
-			
-           </ul>
-         </div>   
-
-
-<!-- there are six different heading elements, <h1> to <h6>, they are used to define the font of the text from bigger (h1) to smaller (h6) -->
-         <div id="home1">
-         <h1 style="text-align:center"><i> Welcome to FUNHOLIDAYS</i></h1><br>
+            <ul>
+              <li><a href="Home.html"><span style=color:white>Home</span></a></li>
+              <li><a href="Aboutus.html"><span style=color:white>About Us</span></a></li>
+              <li><a href="Links.html"><span style=color:white>External Links</span></a></li>
+              <li><a href="Enquiries.html"><span style=color:white>Enquiries</span></a></li>
+			  
+            </ul>
          </div>
-         <div id="video1">
-<!-- animated image (gif) , works the same as a normal img -->
-           <img id="imggif1" src="plane.gif" alt="plane gif">
-<!-- <video> tag used to insert a video, control attribute allows to pause the video,control the volume, skip forwards the video, display at full screen -->
-           <video width="430" height="259" controls>
-             <source src="vide01.mp4" type="video/mp4">
-             <source src="video1.webm" type="video/webm">
-             Your browser does not support this video
-           </video>  
+         <div id="hp1">
+         <h1 style="text-align:center;"> Here is a list of our packages
+         </h1>
          </div>
-         <div id="imgeurope">
-            <img src="homepageimg.jpeg" alt="europe" height="500">
-         </div>
-         <div id="home2">  
+         <div id="hp2">
+         <h2 style="text-align:left;">If you can't find a package that suits your needs, you can go to our <a href="Enquiries.html">Enquiries</a> section and we will find it for you. Alternatively please come to our branch in Liverpool Street.</h2>
          <hr>
-         <h2>Hello everyone, my name is Tom Russell and I am the Branch Manager of the agency <a href="Aboutus.html" target="_blank">FUN HOLIDAYS.</a></h2>
-		 <br>
-<!-- <hr> displays an horizontal line which I used to style the webpage -->         <hr>
-<!-- the tag <em> allows to emphatise some text-->           
-         <h3>If you are looking for the <em>best offers</em> to travel around Europe you are in the right place.  <br>
-<!-- the <a> tag has the attribute target which if it is set as blank opens the link in another page and not in the same as the one where you click -->		   
-             We offer a wide range of <a href="Holidaypackages.html" target="blank">holiday packages</a> for all of the best European cities. </h3>
-		 <br>
-         <hr>    
-         </div>    
-         <div id="home3">
-         <h4>If you are ready to travel, please complete our online form and we will get in touch with you with the best deal as soon as possible.
-         </h4>
-         <form>
-              <img src="arrow1.png" alt="arrow" width="50" height="50" id="img1"><button class="button1" formaction="Enquiries.html">SURVEY</button><img src="arrow2.png" alt="arrow" width="50" height="50" id="img2">
-         </form>
          </div>
+         <div id="hp3">
+         <h3>Please note that the price might change depending on the period and on the lenght of the vacation. Here are the standard prices for three night and return flight.</h3>
+         <hr>
+         </div>
+         <div id="hp4">
+<!-- the <table> tag is used to create tables. <tr> defines a table row, <th> defines a table heading and <td> defines a table cell.
+     Table contains location, basic price and specifies that the package is just for 3 days. -->     
+         <table style="width:75%;">
+           
+           <tr>
+             <th>Location</th>
+             <th>Price</th>
+             <th>Type</th>
+           </tr>
+           <tr>
+              <td>Amsterdam</td>
+              <td>From 110 per person</td>
+              <td>Flight and hotel for 3 nights</td>
+           
+           <tr>
+              <td>Athens</td>
+              <td>From 150 per person</td>
+              <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Barcelona</td>
+               <td>From 135 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           <tr>
+              <td>Belfast</td>
+              <td>From 100 per person</td>
+              <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Berlin</td>
+               <td>From 140 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Budapest</td>
+               <td>From 160 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+            
+           <tr>
+               <td>Cagliari</td>
+               <td>From 100 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+            
+           <tr>
+               <td>Copenhagen</td>
+               <td>From 90 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Dublin</td>
+               <td>From 110 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Glasgow</td>
+               <td>From 100 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Helsinki</td>
+               <td>From 100 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+             
+           <tr>
+               <td>Lisbon</td>
+               <td>From 135 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Oslo</td>
+               <td>From 105 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Palermo</td>
+               <td>From 110 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+
+           <tr>
+               <td>Paris</td>
+               <td>From 125 per person</td>
+               <td>Flight and hotel for 3 night</td>
+           </tr>
+           
+           <tr>
+               <td>Prague</td>
+               <td>From 120 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Rome</td>
+               <td>From 115 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+              
+           <tr>
+               <td>Stockholm</td>
+               <td>From 130 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Vienna</td>
+               <td>From 125 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+           
+           <tr>
+               <td>Zurich</td>
+               <td>From 130 per person</td>
+               <td>Flight and hotel for 3 nights</td>
+           </tr>
+          </table> 
+         </div>   
 		 <div id="audio">
 		 <hr>
-		 <br>
-<!--<audio> tag used to insert background sound in the page. with the control attribute it is possible to start, pause, skip forward and control the volume, with the autoplay attribute the sound starts  when the page is opened. I have inserted two different file type in order to make it compatible with more browsers. -->
-		  <audio controls autoplay>
-		    <source src="music.mp3" type="audio/mp3">
-            <source src="music.ogg" type="audio/ogg">
-		  </audio>
-         </div>
-<!-- html5 logo , page is validates correctly -->		
-		<div id="html5logo">
-		<hr>
-		<br>
-            <a href="https://www.w3.org/html/logo/" target="blank">
-		    <img src="html5logo.png" alt="html5 icon" width="150" height="100">
-            </a>
+		 <audio controls autoplay>
+		      <source src="music.mp3" type="audio/mp3">
+              <source src="music.ogg" type="audio/ogg">
+		 </audio>
+		 </div>
+         <div id="html5logo">
+		    <hr>
+	          <a href="https://www.w3.org/html/logo/" target="blank">	
+		        <img src="html5logo.png" alt="html5 icon" width="150" height="100">
+			      </a>
             <img class="logo" src="logo.png">
             <p>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -94,9 +188,7 @@
                  alt="Valid CSS!">
                 </a>
             </p>
-        
-		</div>
-
-
-     </body>
+		    </div>
+           
+    </body>
 </html>
